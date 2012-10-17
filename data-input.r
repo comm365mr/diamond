@@ -21,3 +21,9 @@ hist(diamond$carat, main="Histogram for Diamond Carat", xlab="Carat", col="light
 ## section 101 stopped here on Oct 17th. 
 
 
+# Do a two way table summary
+table(diamond$color, diamond$clarity)
+
+## section 102 stopped here on Oct 17th. 
+
+
