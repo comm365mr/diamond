@@ -28,6 +28,11 @@ table(diamond$color, diamond$clarity)
 ## section 103 stopped here on Oct 17th. 
 
 ## Plot demostration
+par(bg="lightgreen",fg="red")
 plot(diamond$carat, log(diamond$price),
      main="Plot for Diamond Carat and Log Diamond Price",
      xlab="Carat", ylab="Log Price", col="blue")
+
+model1 = lm(logprice~carat+cut+clarity+color, data=diamond)
+summary(model1)
+plot(model1)
