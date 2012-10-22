@@ -27,4 +27,7 @@ table(diamond$color, diamond$clarity)
 ## section 102 stopped here on Oct 17th. 
 ## section 103 stopped here on Oct 17th. 
 
-
+## Plot demostration
+plot(diamond$carat, log(diamond$price),
+     main="Plot for Diamond Carat and Log Diamond Price",
+     xlab="Carat", ylab="Log Price", col="blue")
