@@ -2,7 +2,7 @@
 # Method 1, you can use workspace ->import dataset 
 # Method 2, type commands
 diamond <- read.csv("diamond.csv")
-diamond_price <- read.csv("diamond_price.csv")
+price <- read.csv("price.csv")
 
 # simple data check
 head(diamond)
