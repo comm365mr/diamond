@@ -32,6 +32,9 @@ model2 = lm(logprice~carat+color+clarity+cut, data=diamond)
 summary(model1)
 summary(model2)
 
+
+## Oct 31, 2012 Regression 2
+
 ## Why fit differnce? Look at the relationship between variables
 par(mfrow=c(1,2)) ## make them plot on the same page
 plot(price~carat, data=diamond[diamond$carat<4,])
