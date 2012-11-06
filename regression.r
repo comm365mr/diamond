@@ -92,5 +92,8 @@ summary(admodel)
 
 ## For logistic model with response variable to be binary 0 or 1, you can directly use the 
 ## variable as a response variable.
-## For example:  glm(sold~days, family=binomial(logit),data=sales)
+## For example:  
+merge.data = merge(sales, diamond, by="sku")
+
+glm(sold~days, family=binomial(logit),data=sales)
 
